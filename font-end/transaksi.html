@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMarket - Transaksi</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="assets/fonts/kodchasan/css2.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="MiniMarket Logo">
+            <h3>minimarket-App</h3>
+        </div>
+        <span class="nav-toggle">&#9776;</span>
+        <ul class="menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="barang.html"><i class="fas fa-box"></i> Product</a></li>
+            <li><a href="transaksi.html"><i class="fas fa-shopping-cart"></i> Transaksi</a></li>
+            <li><a href="report.html"><i class="fas fa-chart-line"></i> Laporan</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div id="form-transaksi">
+            <h2 id="judul"><i class="fas fa-edit"></i> Form Transaksi</h2>
+            <form id="transaksiForm">
+                <select id="id_barang" required> </select>
+                <label for="jumlah">Jumlah barang:</label>
+                <input type="number" id="jumlah" placeholder="Jumlah" required>
+                <button type="submit" class="button btn-green">Tambah Transaksi</button>
+                <button type="button" class="button btn-cancel" onclick="window.location.href='transaksi.html'">Kembali</button>
+            </form>
+        </div>
+        <div id="display-transaksi">
+            <h2><i class="fas fa-shopping-cart"></i> Daftar Transaksi</h2>
+            <button class="button btn-add" id="addTransaksi">Mulai Transaksi</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Barang</th>
+                        <th>Jumlah</th>
+                        <th>Total Harga</th>
+                        <th>Tanggal</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody  id="transaksiTable">
+                    <!-- Data akan diisi oleh JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/transaksi/transaksi.js"></script>
+
+</body>
+</html>

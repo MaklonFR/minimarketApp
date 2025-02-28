@@ -1,0 +1,241 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
+body {
+    font-style: normal;  
+    margin: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #000957;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar img {
+    height: 40px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.navbar .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar .menu li {
+    margin: 0 15px;
+}
+.navbar .menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.navbar .menu li a:hover {
+    text-decoration: underline;
+    color: #f4f4f4;
+}
+
+/* Container */
+.container_dashboard {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container */
+.container {
+    width: 50%;
+    background:#fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Button Styling */
+.btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-edit {
+    background-color: #024CAA;
+    color: white;
+}
+.btn-delete {
+    background-color: #C62E2E;
+    color: white;
+}
+.btn-cancel {
+    background-color: #FF6500;
+    color: white;
+}
+.btn-add {
+    background-color: #0B2F9F;
+    color: white;
+}
+.btn-green {
+    background-color:teal;
+    color: white;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+/* Dashboard Cards */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #344CB7;
+}
+.card .count {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background:#F8FAE5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #344CB7;
+    color: white;
+}
+td i {
+    margin-right: 5px;
+    color: whitesmoke;
+}
+
+
+/* CSS Add Product*/
+form {
+    max-width: 100%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, select {
+    width: 98%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.rightButton {
+    text-align: right;
+}
+
+/* Responsive Navbar */
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        gap: 5;
+        background-color: #344CB7;
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .navbar .menu.active {
+        display: flex;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    table {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Responsive Container */
+@media (max-width: 600px) {
+    .container, .container_dashboard {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+/* Responsive Table */
+.table-container {
+    overflow-x: auto;
+}
+

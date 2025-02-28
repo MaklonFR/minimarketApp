@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMarket - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="assets/fonts/kodchasan/css2.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="MiniMarket Logo">
+            <h3>minimarket-App</h3>
+        </div>
+        <span class="nav-toggle">&#9776;</span>
+        <ul class="menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="barang.html"><i class="fas fa-box"></i> Product</a></li>
+            <li><a href="transaksi.html"><i class="fas fa-shopping-cart"></i> Transaksi</a></li>
+            <li><a href="report.html"><i class="fas fa-chart-line"></i> Laporan</a></li>
+        </ul>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="container_dashboard">
+        <div class="card">
+            <i class="fas fa-box"></i>
+            <h3>Total Produk</h3>
+            <div class="count" id="totalProducts">0</div>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>Total Transaksi</h3>
+            <div class="count" id="totalTransactions">0</div>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-users"></i>
+            <h3>Total Pelanggan</h3>
+            <div class="count" id="totalCustomers">0</div>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>Total Pendapatan</h3>
+            <div class="count" id="totalRevenue">$0</div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

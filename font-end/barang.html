@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMarket Produk</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="assets/fonts/kodchasan/css2.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="MiniMarket Logo">
+            <h3>minimarket-App</h3>
+        </div>
+        <span class="nav-toggle">&#9776;</span>
+        <ul class="menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+            <li><a href="barang.html"><i class="fas fa-box"></i> Product</a></li>
+            <li><a href="transaksi.html"><i class="fas fa-shopping-cart"></i> Transaksi</a></li>
+            <li><a href="report.html"><i class="fas fa-chart-line"></i> Laporan</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div id="form-barang">
+            <h2 id="judul"><i class="fas fa-edit"></i> Tambah Barang</h2>
+            <form id="barangForm">
+                <input type="hidden" id="id_barang">
+            
+                <label for="nama_barang"> Nama Barang:</label>
+                <input type="text" id="nama_barang" required>
+            
+                <label for="kategori">Kategori:</label>
+                <input type="text" id="kategori" required>
+            
+                <label for="harga">Harga:</label>
+                <input type="number" id="harga" required>
+                
+                <label for="diskon">Diskon:</label>
+                <input type="number" id="diskon" required>
+            
+                <label for="stok">Stok:</label>
+                <input type="number" id="stok" required>
+                
+                <button class="button btn-add" type="submit">Simpan Produk</button>
+                <button type="button" class="button btn-cancel" onclick="window.location.href='barang.html'">Kembali</button>
+            </form>
+        </div>
+
+        <div id="display-barang">
+            <h2><i class="fas fa-box"></i> Daftar Produk</h2>
+            <button class="button btn-add" id="addBarang">Tambah Produk</button>    
+            <table id="productBarang" class="table-container">
+                <thead>
+                    <tr>
+                        <th><i class="fas fa-tag"></i> Nama</th>
+                        <th><i class="fas fa-list"></i> Kategori</th>
+                        <th><i class="fas fa-dollar-sign"></i> Harga</th>
+                        <th><i class="fas fa-boxes"></i> Stok</th>
+                        <th><i class="fa-solid fa-percent"></i> Diskon</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="barangTable">
+                    <!-- Product rows will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/product/products.js"></script>
+</body>
+</html>
