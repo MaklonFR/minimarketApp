@@ -43,4 +43,17 @@ Untuk menjalankan proyek ini di komputer Anda, pastikan Anda memiliki hal-hal be
 3. Klik kanan pada file `index.html` (atau file utama Anda) dan pilih **Open with Live Server**.
 4. Anda bisa mengakses front-end melalui browser di `http://localhost:5500/` (port default Live Server).
 
-## Struktur Folder Proyek
+### 6. RESULT
+**1. Dashboard (index.html)**
+![image](https://github.com/user-attachments/assets/f0bfa0a5-0b1e-4f40-ac87-b5bd6e3f296f)
+
+**2. Barang / Product (barang.html)**
+![image](https://github.com/user-attachments/assets/56280420-ee56-4f4f-a96a-19fd48db8ebc)
+
+**3. Transaksi (transaksi.html)**
+![image](https://github.com/user-attachments/assets/a3748952-ab69-47c0-8ce6-1ec822446b26)
+
+![image](https://github.com/user-attachments/assets/95dd3823-cf81-4d43-8f7b-e299df7e1347)
+
+
+
