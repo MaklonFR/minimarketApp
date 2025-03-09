@@ -55,5 +55,8 @@ Untuk menjalankan proyek ini di komputer Anda, pastikan Anda memiliki hal-hal be
 
 ![image](https://github.com/user-attachments/assets/95dd3823-cf81-4d43-8f7b-e299df7e1347)
 
+## Link Youtube Tutorial:
+https://www.youtube.com/watch?v=YZ73Q51ZXvg
+
 
 
